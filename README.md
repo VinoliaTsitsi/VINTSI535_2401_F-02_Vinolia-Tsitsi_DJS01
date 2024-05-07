@@ -29,7 +29,7 @@ This challenge invites students to debug, refactor, and enhance JavaScript funct
 - **Remaining Fuel**: Approximately 3,200 kg after correction.
 
 #### Your Task
-
+ 
 1. **Identify and Understand Errors**: Analyse the provided functions to determine how unit mismatches and parameter misalignments cause incorrect results.
 2. **Refactor and Correct**: Modify the functions to handle parameters more effectively, incorporating object destructuring for clarity and implementing necessary unit conversions.
 
