@@ -19,10 +19,10 @@ const remainingFuel = fuelBurningRate * initialTime;  //calculates remaining fue
 
 
 const props= {
-  initialVelocity,
-  initialAcceleration,
-  initialTime
-}; 
+  velocity: initialVelocity,
+  accelaration: initialAcceleration,
+  time: initialTime
+}
 
 function NewVelocity (prop) {
 return Velocity + (initialAcceleration * (initialTime / 3600) ) //calculates new velocity based on acceleration
