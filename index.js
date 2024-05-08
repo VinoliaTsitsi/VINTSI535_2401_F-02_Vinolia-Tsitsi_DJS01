@@ -8,19 +8,26 @@
 // Given Parameters
 const initialVelocity = 10000; // velocity (km/h)
 const initialAcceleration = 3; // acceleration (m/s^2)
-const initialtime = 3600; // seconds (1 hour)
+const initialTime = 3600; // seconds (1 hour)
 const initialDistance = 0; // distance (km)
 const fuel = 5000; // remaining fuel (kg)
 const fuelBurningRate = 0.5; // fuel burn rate (kg/s)
 
 
-const finalDistance = initialDistance + (initialVelocity * (initialtime / 3600)) //calcultes new distance
-const remainingFuel = fuelBurningRate * initialtime;  //calculates remaining fuel
+const finalDistance = initialDistance + (initialVelocity * (initialTime / 3600)) //calcultes new distance
+const remainingFuel = fuelBurningRate * initialTime;  //calculates remaining fuel
 
-function calculateNewVelocity (initialAcceleration, Velocity, initialtimetime) {
-return Velocity + (initialAcceleration * (initialtimetime / 3600) ) //calculates new velocity based on acceleration
+
+const props= {
+  initialVelocity,
+  initialAcceleration,
+  initialTime
+}; 
+
+function NewVelocity (prop) {
+return Velocity + (initialAcceleration * (initialTime / 3600) ) //calculates new velocity based on acceleration
 } 
-const finalVelocity = calculateNewVelocity(initialAcceleration, initialVelocity, initialtime); 
+const finalVelocity = NewVelocity(initialVelocity, initialAcceleration, initialTime); 
 
 // Pick up an error with how the function below is called and make it robust to such errors
 
