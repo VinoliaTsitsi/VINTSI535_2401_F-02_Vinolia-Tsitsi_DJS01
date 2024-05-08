@@ -14,11 +14,11 @@ const fuel = 5000; // remaining fuel (kg)
 const fuelBurningRate = 0.5; // fuel burn rate (kg/s)
 
 
-const finalDistance = initialDistance + (initialVelocity* initialtime) //calcultes new distance
-const remainingFuel = fuelBurningRate * initialtime //calculates remaining fuel
+const finalDistance = initialDistance + (initialVelocity * (initialtime / 3600)) //calcultes new distance
+const remainingFuel = fuelBurningRate * initialtime;  //calculates remaining fuel
 
-function calculateNewVelocity (initialAcceleration, initialVelocity, initialtimetime){
-return velocity + (initialAcceleration * initialtimetime ) //calculates new velocity based on acceleration
+function calculateNewVelocity (initialAcceleration, Velocity, initialtimetime) {
+return Velocity + (initialAcceleration * (initialtimetime / 3600) ) //calculates new velocity based on acceleration
 } 
 const finalVelocity = calculateNewVelocity(initialAcceleration, initialVelocity, initialtime); 
 
